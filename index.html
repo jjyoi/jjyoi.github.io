@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyi's Portfolio</title>
+    <link rel="stylesheet" href="style.css"> <!--connect the css file to the html-->
+    <script src="https://kit.fontawesome.com/29ad537bc8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <div class="header-bar">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>                
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+        <div class="header-text">
+            <p>Intro</p>
+            <h1>Hi, I'm <span>Joyi Xue</span><br>welcome to my portfolio!</h1>
+        </div>
+    </div>
+
+<!-- ----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/joyi.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>
+                    I am a first year student pursing Computer Science at the University of Toronto and I am passionate about data analysis, machine learning, and blahaj!
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('awards')">Awards</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>C++</span><br>Competitive programming</li>
+                        <li><span>Python</span><br>Idk</li>
+                        <li><span>Java</span><br>gr12. lol</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Hackathons</span><br>Past projects</li>
+                        <li><span>Competitive Programming</span><br>Other random projects</li>
+                        <li><span>Course Work</span><br>CSC110/CSC111</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024-2024</span><br>Bachelor's of Computer Science at the University of Toronto</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="awards">
+                    <ul>
+                        <li><span>2024</span><br>Honour Roll - Senior Computing Competition</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------services---------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Solving CCC For U</h2>
+                <p>I can chatGPT u some ccc answers or ig i can try solving it</p>
+                <a href="#"> learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-user"></i>
+                <h2>Crying on Command</h2>
+                <p>I'll make them feel bad ong</p>
+                <a href="#"> learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-heart"></i>
+                <h2>Kiss kiss mwah</h2>
+                <p>I give u forehead kiss</p>
+                <a href="#"> learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------services---------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.jpg">
+                <div class="layer">
+                    <h3>Hack the North</h3>
+                    <p>IntroSpectacle</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.jpg">
+                <div class="layer">
+                    <h3>Hack the Valley 8</h3>
+                    <p>Carma</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.jpg">
+                <div class="layer">
+                    <h3>Hack the Valley 7</h3>
+                    <p>Level UP</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- ----------contact---------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i>joyi.xue@mail.utoronto.ca</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/joyi-x/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/__jyoi/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/jjyoi"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/Joyi_Xue_Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows=6 placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2024 Joyi Xue</p>
+    </div>
+</div>
+
+<!-- load in javascript from script file -->
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
