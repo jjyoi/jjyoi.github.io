@@ -86,7 +86,7 @@ nav ul li a:hover::after{
 .header-text{
     margin-top: 20%;
     font-size: 30px;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(23, 64, 94,0.6));
+    background: linear-gradient(rgba(0,0,0,0), rgba(23, 64, 94,0.6));
     padding: 20px; 
     border-radius: 20px; 
     display: inline-block; 
@@ -180,19 +180,19 @@ nav ul li a:hover::after{
     display: block;
 }
 
-/* ------------services------------ */
-#services{
+/* ------------projects------------ */
+#projects{
     padding: 30px 0;
 }
 
-.services-list{
+.projects-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
 
-.services-list div{
+.projects-list div{
     background: #262626;
     padding: 40px;
     font-size: 13px;
@@ -201,18 +201,18 @@ nav ul li a:hover::after{
     transition: background 0.5s, transform 0.5s;
 }
 
-.services-list div i{
+.projects-list div i{
     font-size: 50px;
     margin-bottom: 20px;
 }
 
-.services-list div h2{
+.projects-list div h2{
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
 }
 
-.services-list div a{
+.projects-list div a{
     text-decoration: none;
     color: #fff;
     font-size: 12px;
@@ -220,7 +220,7 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 
-.services-list div:hover{
+.projects-list div:hover{
     background: #577183;
     transform: translateY(-10px);
 }
@@ -237,6 +237,16 @@ nav ul li a:hover::after{
     margin-top: 50px; 
 }
 
+.work-item{
+    text-align: center;
+}
+
+.work-item h2{
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
 .work{
     border-radius: 20px;
     position: relative;
@@ -250,6 +260,10 @@ nav ul li a:hover::after{
     border-radius: 20px;
     display: block;
     transition: transform 0.5s;
+}
+
+.work-item h2{
+    color: #fff;
 }
 
 .layer{

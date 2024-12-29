@@ -17,16 +17,17 @@
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>                
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#projects">Projects</a></li>                
+                    <!-- <li><a href="#portfolio">Portfolio</a></li> -->
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">Resume</a></li>
                     <i class="fa-solid fa-times" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
         </div>
         <div class="header-text">
-            <p>Intro</p>
+            <p>...</p>
             <h1>Hi, I'm <span>Joyi Xue</span><br>welcome to my portfolio!</h1>
         </div>
     </div>
@@ -41,7 +42,8 @@
             <div class="about-col-2">
                 <h1 class="subtitle">About Me</h1>
                 <p>
-                    I am a first year student pursing Computer Science at the University of Toronto and I am passionate about data analysis, machine learning, and blahaj!
+                    I'm a first-year Computer Science student at the University of Toronto with a passion for exploring new technologies and problem solving. 
+                    <br>My interests include data analysis, machine learning, and Blåhaj!!
                 </p>
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -51,9 +53,24 @@
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><span>C++</span><br>Competitive programming</li>
-                        <li><span>Python</span><br>Idk</li>
-                        <li><span>Java</span><br>gr12. lol</li>
+                        <li><span><b>Technical Skills</b></span><br>
+                            <ul>
+                                <li><b>Languages</b>: Proficient in Python, C++, and Java; familiar with JavaScript, HTML, and CSS</li>
+                                <li><b>Data Analysis</b>: Experience with data visualization and processing with tools like pandas, NumPy, Matplotlib, and Seaborn</li>
+                                <li><b>Machine Learning</b>: Understanding of fundamental concepts and frameworks such as scikit-learn and TensorFlow</li>
+                                <li><b>Version Control</b>: Proficient in Git for collaborative development</li>
+                            </ul>
+                        </li>
+                        <li><span><b>Soft Skills</b></span><br>
+                            <ul>
+                                <li><b>Collaboration</b>: Strong team player with experience working on diverse teams in hackathons and community projects</li>
+                                <li><b>Problem-Solving</b>: Adept at identifying and implementing solutions for real-world challenges</li>
+                                <li><b>Adaptability</b>: Quick learner with a passion for grasping new skills and technologies</li>
+                                <li><b>Communication</b>: Clear and effective verbal and written communication skills for technical and non-technical audiences</li>
+                                <li><b>Time Management</b>: Skilled in prioritizing tasks and meeting deadlines, as demonstrated by successful hackathon projects and academic commitments</li>
+                            </ul>
+                        </li>
+                        <li><span><b>Additional Skills</b></span><br>Instruction & mentorship, experience with agile methodologies, skiing</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="experience">
@@ -78,11 +95,11 @@
     </div>
 </div>
 
-<!-- ----------services---------- -->
-<div id="services">
+<!-- ----------projects---------- -->
+<div id="projects">
     <div class="container">
-        <h1 class="subtitle">My Services</h1>
-        <div class="services-list">
+        <h1 class="subtitle">My Projects</h1>
+        <div class="projects-list">
             <div>
                 <i class="fa-solid fa-code"></i>
                 <h2>Solving CCC For U</h2>
@@ -105,36 +122,45 @@
     </div>
 </div>
 
-<!-- ----------services---------- -->
+<!-- ----------portfolio---------- -->
 <div id="portfolio">
     <div class="container">
-        <h1 class="subtitle">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/work1.jpg">
-                <div class="layer">
-                    <h3>Hack the North</h3>
-                    <p>IntroSpectacle</p>
-                    <a href="#"><i class="fa-solid fa-link"></i></a>
+        <h1 class="subtitle">Hackathons</h1>
+            <div class="work-list">
+                <div class="work-item">
+                    <h2>IntroSpectacle</h2>
+                    <div class="work">
+                        <img src="images/htn2024.png">
+                        <div class="layer">
+                            <h3>You've been talking to people all throughout orientation, but you don't remember any of the conversations. Introducing IntroSpectacle!</h3>
+                            <p>Hack the North 2024</p>
+                            <a href="https://devpost.com/software/introspectacle" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <h2>Carma</h2>
+                    <div class="work">
+                        <img src="images/htv8.png">
+                        <div class="layer">
+                            <h3>An eco-friendly carpooling platform designed to reduce your carbon emissions</h3>
+                            <p>Hack the Valley 8</p>
+                            <a href="https://devpost.com/software/carma-26tki7" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <h2>zomBAE</h2>
+                    <div class="work">
+                        <img src="images/apocalypse2024.png">
+                        <div class="layer">
+                            <h3>When all zombies seem hungry for human flesh, who wouldn't also be hungry for love? With Zom-BAE you can find your aPOOKIElypse today!</h3>
+                            <p>Apocalypse @ Shopify 2024</p>
+                            <a href="https://github.com/sophian098/apocalypse-website" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="work">
-                <img src="images/work2.jpg">
-                <div class="layer">
-                    <h3>Hack the Valley 8</h3>
-                    <p>Carma</p>
-                    <a href="#"><i class="fa-solid fa-link"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/work3.jpg">
-                <div class="layer">
-                    <h3>Hack the Valley 7</h3>
-                    <p>Level UP</p>
-                    <a href="#"><i class="fa-solid fa-link"></i></a>
-                </div>
-            </div>
-        </div>
         <a href="#" class="btn">See more</a>
     </div>
 </div>
