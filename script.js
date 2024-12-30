@@ -52,4 +52,3 @@ window.addEventListener("scroll", function () {
         headerBar.classList.remove("shrink");
     }
 });
-
